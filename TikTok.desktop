@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=TikTok
+Exec=/usr/bin/python /home/pi/Desktop/TikTok.py

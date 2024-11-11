@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=SendToDisplay
+Exec=/usr/bin/python /home/pi/Desktop/SendToDisplay.py
