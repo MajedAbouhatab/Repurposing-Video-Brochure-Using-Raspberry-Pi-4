@@ -94,31 +94,3 @@ while True:
                 VideoFile = SetVideoFile(driver)
     except Exception as e:
         print(e)
-
-# def RotateVideo(f):
-#     cap = VideoCapture(f)
-#     fourcc = VideoWriter_fourcc(*'mp4v')
-#     fps = cap.get(CAP_PROP_FPS)
-#     height = int(cap.get(CAP_PROP_FRAME_HEIGHT))
-#     width = int(cap.get(CAP_PROP_FRAME_WIDTH))
-#     out = VideoWriter(f+'.mp4', fourcc, fps, (height, width)) 
-# 
-#     while cap.isOpened():
-#         ret, frame = cap.read()
-#         if not ret:
-#             break
-#         out.write(rotate(frame, ROTATE_90_CLOCKWISE))
-# 
-#     cap.release()
-#     out.release()
-# #     sleep(1)
-#     remove(f)
-#     rename(f+'.mp4',f)
-
-#                     system('ffmpeg -i ' + VideoFile + ' -vf transpose=2 ' + VideoFile + '.mp4')
-#                     remove(VideoFile)
-#                     rename(VideoFile + '.mp4',VideoFile)
-#                     RotateVideo(VideoFile)
-#                     VideoFileClip(VideoFile).rotate(90).write_videofile(VideoFile + '.mp4')
-                    #remove(f)
-                    #rename(f+'.mp4',f)
